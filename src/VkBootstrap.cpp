@@ -1349,6 +1349,10 @@ PhysicalDeviceSelector& PhysicalDeviceSelector::set_minimum_version(uint32_t maj
 	criteria.required_version = VKB_MAKE_VK_VERSION(0, major, minor, 0);
 	return *this;
 }
+PhysicalDeviceSelector& PhysicalDeviceSelector::set_minimum_version(uint32_t version) {
+	criteria.required_version = version;
+	return *this;
+}
 PhysicalDeviceSelector& PhysicalDeviceSelector::set_desired_version(uint32_t major, uint32_t minor) {
 	criteria.desired_version = VKB_MAKE_VK_VERSION(0, major, minor, 0);
 	return *this;

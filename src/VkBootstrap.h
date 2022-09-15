@@ -580,6 +580,7 @@ class PhysicalDeviceSelector {
 	PhysicalDeviceSelector& set_desired_version(uint32_t major, uint32_t minor);
 	// Require a physical device that supports a (major, minor) version of vulkan.
 	PhysicalDeviceSelector& set_minimum_version(uint32_t major, uint32_t minor);
+	PhysicalDeviceSelector& set_minimum_version(uint32_t version);
 
 	// By default PhysicalDeviceSelector enables the portability subset if available
 	// This function disables that behavior
